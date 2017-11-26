@@ -1,0 +1,901 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(symbol
+	(rect 640 120 848 280)
+	(text "PosicaoAlien" (rect 5 0 78 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 144 25 156)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "PosFF2" (rect 0 0 42 14)(font "Arial" (font_size 8)))
+		(text "PosFF2" (rect 21 27 63 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "PosFF1" (rect 0 0 42 14)(font "Arial" (font_size 8)))
+		(text "PosFF1" (rect 21 43 63 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "PosFF0" (rect 0 0 42 14)(font "Arial" (font_size 8)))
+		(text "PosFF0" (rect 21 59 63 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "ClkVertical" (rect 0 0 60 14)(font "Arial" (font_size 8)))
+		(text "ClkVertical" (rect 21 75 81 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "Reset" (rect 0 0 33 14)(font "Arial" (font_size 8)))
+		(text "Reset" (rect 21 91 54 105)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "ClkHorizontal" (rect 0 0 73 14)(font "Arial" (font_size 8)))
+		(text "ClkHorizontal" (rect 21 107 94 121)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 16 112))
+	)
+	(port
+		(pt 208 32)
+		(output)
+		(text "FlagDeDerrota" (rect 0 0 81 14)(font "Arial" (font_size 8)))
+		(text "FlagDeDerrota" (rect 106 27 187 41)(font "Arial" (font_size 8)))
+		(line (pt 208 32)(pt 192 32))
+	)
+	(port
+		(pt 208 48)
+		(output)
+		(text "PosV0" (rect 0 0 37 14)(font "Arial" (font_size 8)))
+		(text "PosV0" (rect 150 43 187 57)(font "Arial" (font_size 8)))
+		(line (pt 208 48)(pt 192 48))
+	)
+	(port
+		(pt 208 64)
+		(output)
+		(text "PosV1" (rect 0 0 37 14)(font "Arial" (font_size 8)))
+		(text "PosV1" (rect 150 59 187 73)(font "Arial" (font_size 8)))
+		(line (pt 208 64)(pt 192 64))
+	)
+	(port
+		(pt 208 80)
+		(output)
+		(text "PosV2" (rect 0 0 37 14)(font "Arial" (font_size 8)))
+		(text "PosV2" (rect 150 75 187 89)(font "Arial" (font_size 8)))
+		(line (pt 208 80)(pt 192 80))
+	)
+	(port
+		(pt 208 96)
+		(output)
+		(text "PosH0" (rect 0 0 36 14)(font "Arial" (font_size 8)))
+		(text "PosH0" (rect 151 91 187 105)(font "Arial" (font_size 8)))
+		(line (pt 208 96)(pt 192 96))
+	)
+	(port
+		(pt 208 112)
+		(output)
+		(text "PosH1" (rect 0 0 36 14)(font "Arial" (font_size 8)))
+		(text "PosH1" (rect 151 107 187 121)(font "Arial" (font_size 8)))
+		(line (pt 208 112)(pt 192 112))
+	)
+	(port
+		(pt 208 128)
+		(output)
+		(text "PosH2" (rect 0 0 36 14)(font "Arial" (font_size 8)))
+		(text "PosH2" (rect 151 123 187 137)(font "Arial" (font_size 8)))
+		(line (pt 208 128)(pt 192 128))
+	)
+	(drawing
+		(rectangle (rect 16 16 192 144))
+	)
+)
+(symbol
+	(rect 1264 224 1416 448)
+	(text "Registradores do Display" (rect 5 0 147 14)(font "Arial" (font_size 8)))
+	(text "inst1" (rect 8 208 31 220)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "PosV0" (rect 0 0 37 14)(font "Arial" (font_size 8)))
+		(text "PosV0" (rect 21 27 58 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "PosV1" (rect 0 0 37 14)(font "Arial" (font_size 8)))
+		(text "PosV1" (rect 21 43 58 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "PosV2" (rect 0 0 37 14)(font "Arial" (font_size 8)))
+		(text "PosV2" (rect 21 59 58 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "PosH0" (rect 0 0 36 14)(font "Arial" (font_size 8)))
+		(text "PosH0" (rect 21 75 57 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "PosH1" (rect 0 0 36 14)(font "Arial" (font_size 8)))
+		(text "PosH1" (rect 21 91 57 105)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "PosH2" (rect 0 0 36 14)(font "Arial" (font_size 8)))
+		(text "PosH2" (rect 21 107 57 121)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 16 112))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "ClkVideo" (rect 0 0 49 14)(font "Arial" (font_size 8)))
+		(text "ClkVideo" (rect 21 123 70 137)(font "Arial" (font_size 8)))
+		(line (pt 0 128)(pt 16 128))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "Clear" (rect 0 0 29 14)(font "Arial" (font_size 8)))
+		(text "Clear" (rect 21 139 50 153)(font "Arial" (font_size 8)))
+		(line (pt 0 144)(pt 16 144))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "PosNave0" (rect 0 0 57 14)(font "Arial" (font_size 8)))
+		(text "PosNave0" (rect 21 155 78 169)(font "Arial" (font_size 8)))
+		(line (pt 0 160)(pt 16 160))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "PosNave1" (rect 0 0 57 14)(font "Arial" (font_size 8)))
+		(text "PosNave1" (rect 21 171 78 185)(font "Arial" (font_size 8)))
+		(line (pt 0 176)(pt 16 176))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "PosNave2" (rect 0 0 57 14)(font "Arial" (font_size 8)))
+		(text "PosNave2" (rect 21 187 78 201)(font "Arial" (font_size 8)))
+		(line (pt 0 192)(pt 16 192))
+	)
+	(port
+		(pt 152 32)
+		(output)
+		(text "L0[7..0]" (rect 0 0 42 14)(font "Arial" (font_size 8)))
+		(text "L0[7..0]" (rect 89 27 131 41)(font "Arial" (font_size 8)))
+		(line (pt 152 32)(pt 136 32)(line_width 3))
+	)
+	(port
+		(pt 152 48)
+		(output)
+		(text "L1[7..0]" (rect 0 0 42 14)(font "Arial" (font_size 8)))
+		(text "L1[7..0]" (rect 89 43 131 57)(font "Arial" (font_size 8)))
+		(line (pt 152 48)(pt 136 48)(line_width 3))
+	)
+	(port
+		(pt 152 64)
+		(output)
+		(text "L2[7..0]" (rect 0 0 42 14)(font "Arial" (font_size 8)))
+		(text "L2[7..0]" (rect 89 59 131 73)(font "Arial" (font_size 8)))
+		(line (pt 152 64)(pt 136 64)(line_width 3))
+	)
+	(port
+		(pt 152 80)
+		(output)
+		(text "L3[7..0]" (rect 0 0 42 14)(font "Arial" (font_size 8)))
+		(text "L3[7..0]" (rect 89 75 131 89)(font "Arial" (font_size 8)))
+		(line (pt 152 80)(pt 136 80)(line_width 3))
+	)
+	(port
+		(pt 152 96)
+		(output)
+		(text "L4[7..0]" (rect 0 0 42 14)(font "Arial" (font_size 8)))
+		(text "L4[7..0]" (rect 89 91 131 105)(font "Arial" (font_size 8)))
+		(line (pt 152 96)(pt 136 96)(line_width 3))
+	)
+	(port
+		(pt 152 112)
+		(output)
+		(text "L5[7..0]" (rect 0 0 42 14)(font "Arial" (font_size 8)))
+		(text "L5[7..0]" (rect 89 107 131 121)(font "Arial" (font_size 8)))
+		(line (pt 152 112)(pt 136 112)(line_width 3))
+	)
+	(port
+		(pt 152 128)
+		(output)
+		(text "L6[7..0]" (rect 0 0 42 14)(font "Arial" (font_size 8)))
+		(text "L6[7..0]" (rect 89 123 131 137)(font "Arial" (font_size 8)))
+		(line (pt 152 128)(pt 136 128)(line_width 3))
+	)
+	(port
+		(pt 152 144)
+		(output)
+		(text "L7[7..0]" (rect 0 0 42 14)(font "Arial" (font_size 8)))
+		(text "L7[7..0]" (rect 89 139 131 153)(font "Arial" (font_size 8)))
+		(line (pt 152 144)(pt 136 144)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 136 208))
+	)
+)
+(symbol
+	(rect 1296 536 1488 824)
+	(text "JogoPerdido" (rect 5 0 74 14)(font "Arial" (font_size 8)))
+	(text "inst2" (rect 8 272 31 284)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "0Tiros" (rect 0 0 35 14)(font "Arial" (font_size 8)))
+		(text "0Tiros" (rect 21 27 56 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "FlagAlien" (rect 0 0 51 14)(font "Arial" (font_size 8)))
+		(text "FlagAlien" (rect 21 43 72 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "PosHAlien2" (rect 0 0 64 14)(font "Arial" (font_size 8)))
+		(text "PosHAlien2" (rect 21 59 85 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "PosHAlien1" (rect 0 0 64 14)(font "Arial" (font_size 8)))
+		(text "PosHAlien1" (rect 21 75 85 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "PosHAlien0" (rect 0 0 64 14)(font "Arial" (font_size 8)))
+		(text "PosHAlien0" (rect 21 91 85 105)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "PosVAlien2" (rect 0 0 66 14)(font "Arial" (font_size 8)))
+		(text "PosVAlien2" (rect 21 107 87 121)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 16 112))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "PosVAlien1" (rect 0 0 66 14)(font "Arial" (font_size 8)))
+		(text "PosVAlien1" (rect 21 123 87 137)(font "Arial" (font_size 8)))
+		(line (pt 0 128)(pt 16 128))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "PosVAlien0" (rect 0 0 66 14)(font "Arial" (font_size 8)))
+		(text "PosVAlien0" (rect 21 139 87 153)(font "Arial" (font_size 8)))
+		(line (pt 0 144)(pt 16 144))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "PosHtiro2" (rect 0 0 54 14)(font "Arial" (font_size 8)))
+		(text "PosHtiro2" (rect 21 155 75 169)(font "Arial" (font_size 8)))
+		(line (pt 0 160)(pt 16 160))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "PosHTiro1" (rect 0 0 57 14)(font "Arial" (font_size 8)))
+		(text "PosHTiro1" (rect 21 171 78 185)(font "Arial" (font_size 8)))
+		(line (pt 0 176)(pt 16 176))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "PosHTiro0" (rect 0 0 57 14)(font "Arial" (font_size 8)))
+		(text "PosHTiro0" (rect 21 187 78 201)(font "Arial" (font_size 8)))
+		(line (pt 0 192)(pt 16 192))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "PosVTiro2" (rect 0 0 59 14)(font "Arial" (font_size 8)))
+		(text "PosVTiro2" (rect 21 203 80 217)(font "Arial" (font_size 8)))
+		(line (pt 0 208)(pt 16 208))
+	)
+	(port
+		(pt 0 224)
+		(input)
+		(text "PosVTiro1" (rect 0 0 59 14)(font "Arial" (font_size 8)))
+		(text "PosVTiro1" (rect 21 219 80 233)(font "Arial" (font_size 8)))
+		(line (pt 0 224)(pt 16 224))
+	)
+	(port
+		(pt 0 240)
+		(input)
+		(text "PosVTiro0" (rect 0 0 59 14)(font "Arial" (font_size 8)))
+		(text "PosVTiro0" (rect 21 235 80 249)(font "Arial" (font_size 8)))
+		(line (pt 0 240)(pt 16 240))
+	)
+	(port
+		(pt 192 32)
+		(output)
+		(text "JogoPerdido" (rect 0 0 69 14)(font "Arial" (font_size 8)))
+		(text "JogoPerdido" (rect 102 27 171 41)(font "Arial" (font_size 8)))
+		(line (pt 192 32)(pt 176 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 176 272))
+	)
+)
+(connector
+	(pt 640 152)
+	(pt 288 152)
+)
+(connector
+	(pt 640 168)
+	(pt 288 168)
+)
+(connector
+	(pt 640 184)
+	(pt 288 184)
+)
+(connector
+	(pt 640 200)
+	(pt 392 200)
+)
+(connector
+	(pt 392 200)
+	(pt 392 440)
+)
+(connector
+	(pt 392 440)
+	(pt 328 440)
+)
+(connector
+	(pt 640 232)
+	(pt 416 232)
+)
+(connector
+	(pt 416 232)
+	(pt 416 480)
+)
+(connector
+	(pt 416 480)
+	(pt 328 480)
+)
+(connector
+	(pt 1264 352)
+	(pt 432 352)
+)
+(connector
+	(pt 432 352)
+	(pt 432 504)
+)
+(connector
+	(pt 432 504)
+	(pt 328 504)
+)
+(connector
+	(pt 1264 384)
+	(pt 464 384)
+)
+(connector
+	(pt 464 384)
+	(pt 464 720)
+)
+(connector
+	(pt 368 720)
+	(pt 464 720)
+)
+(connector
+	(pt 1264 400)
+	(pt 472 400)
+)
+(connector
+	(pt 472 400)
+	(pt 472 776)
+)
+(connector
+	(pt 368 776)
+	(pt 472 776)
+)
+(connector
+	(pt 1264 416)
+	(pt 480 416)
+)
+(connector
+	(pt 480 416)
+	(pt 480 792)
+)
+(connector
+	(pt 368 792)
+	(pt 480 792)
+)
+(connector
+	(pt 992 -24)
+	(pt 880 -24)
+)
+(connector
+	(pt 880 168)
+	(pt 848 168)
+)
+(connector
+	(pt 848 184)
+	(pt 896 184)
+)
+(connector
+	(pt 896 -8)
+	(pt 992 -8)
+)
+(connector
+	(pt 848 200)
+	(pt 912 200)
+)
+(connector
+	(pt 912 8)
+	(pt 992 8)
+)
+(connector
+	(pt 848 216)
+	(pt 928 216)
+)
+(connector
+	(pt 928 24)
+	(pt 992 24)
+)
+(connector
+	(pt 848 232)
+	(pt 944 232)
+)
+(connector
+	(pt 944 40)
+	(pt 992 40)
+)
+(connector
+	(pt 848 248)
+	(pt 960 248)
+)
+(connector
+	(pt 960 48)
+	(pt 992 48)
+)
+(connector
+	(pt 1264 256)
+	(pt 1264 88)
+)
+(connector
+	(pt 1264 88)
+	(pt 1200 88)
+)
+(connector
+	(pt 1264 272)
+	(pt 1248 272)
+)
+(connector
+	(pt 1248 272)
+	(pt 1248 64)
+)
+(connector
+	(pt 1248 64)
+	(pt 1200 64)
+)
+(connector
+	(pt 1264 288)
+	(pt 1232 288)
+)
+(connector
+	(pt 1232 288)
+	(pt 1232 40)
+)
+(connector
+	(pt 1200 40)
+	(pt 1232 40)
+)
+(connector
+	(pt 1264 304)
+	(pt 1192 304)
+)
+(connector
+	(pt 1192 304)
+	(pt 1192 96)
+)
+(connector
+	(pt 1264 320)
+	(pt 1168 320)
+)
+(connector
+	(pt 1168 320)
+	(pt 1168 96)
+)
+(connector
+	(pt 1264 336)
+	(pt 1144 336)
+)
+(connector
+	(pt 1144 336)
+	(pt 1144 96)
+)
+(connector
+	(pt 1120 368)
+	(pt 1120 96)
+)
+(connector
+	(pt 1272 368)
+	(pt 1264 368)
+)
+(connector
+	(pt 1264 368)
+	(pt 1120 368)
+)
+(connector
+	(pt 1000 96)
+	(pt 1000 808)
+)
+(connector
+	(pt 1000 808)
+	(pt 368 808)
+)
+(connector
+	(pt 1008 824)
+	(pt 368 824)
+)
+(connector
+	(pt 1016 832)
+	(pt 368 832)
+)
+(connector
+	(pt 368 848)
+	(pt 1032 848)
+)
+(connector
+	(pt 1048 864)
+	(pt 368 864)
+)
+(connector
+	(pt 368 872)
+	(pt 1064 872)
+)
+(connector
+	(pt 960 600)
+	(pt 1296 600)
+)
+(connector
+	(pt 960 48)
+	(pt 960 248)
+)
+(connector
+	(pt 960 248)
+	(pt 960 600)
+)
+(connector
+	(pt 944 616)
+	(pt 1296 616)
+)
+(connector
+	(pt 944 40)
+	(pt 944 232)
+)
+(connector
+	(pt 944 232)
+	(pt 944 616)
+)
+(connector
+	(pt 928 632)
+	(pt 1296 632)
+)
+(connector
+	(pt 928 24)
+	(pt 928 216)
+)
+(connector
+	(pt 928 216)
+	(pt 928 632)
+)
+(connector
+	(pt 912 648)
+	(pt 1296 648)
+)
+(connector
+	(pt 912 8)
+	(pt 912 200)
+)
+(connector
+	(pt 912 200)
+	(pt 912 648)
+)
+(connector
+	(pt 896 664)
+	(pt 1296 664)
+)
+(connector
+	(pt 896 -8)
+	(pt 896 184)
+)
+(connector
+	(pt 896 184)
+	(pt 896 664)
+)
+(connector
+	(pt 880 680)
+	(pt 1296 680)
+)
+(connector
+	(pt 880 -24)
+	(pt 880 168)
+)
+(connector
+	(pt 880 168)
+	(pt 880 680)
+)
+(connector
+	(pt 848 152)
+	(pt 864 152)
+)
+(connector
+	(pt 864 152)
+	(pt 864 584)
+)
+(connector
+	(pt 864 584)
+	(pt 1296 584)
+)
+(connector
+	(pt 1296 568)
+	(pt 424 568)
+)
+(connector
+	(pt 424 568)
+	(pt 424 688)
+)
+(connector
+	(pt 424 688)
+	(pt 368 688)
+)
+(connector
+	(pt 1296 776)
+	(pt 1064 776)
+)
+(connector
+	(pt 1064 872)
+	(pt 1064 776)
+)
+(connector
+	(pt 1064 776)
+	(pt 1064 96)
+)
+(connector
+	(pt 1296 760)
+	(pt 1048 760)
+)
+(connector
+	(pt 1048 96)
+	(pt 1048 760)
+)
+(connector
+	(pt 1048 760)
+	(pt 1048 864)
+)
+(connector
+	(pt 1296 744)
+	(pt 1032 744)
+)
+(connector
+	(pt 1032 848)
+	(pt 1032 744)
+)
+(connector
+	(pt 1296 728)
+	(pt 1032 728)
+)
+(connector
+	(pt 1032 744)
+	(pt 1032 728)
+)
+(connector
+	(pt 1032 96)
+	(pt 1032 728)
+)
+(connector
+	(pt 1296 712)
+	(pt 1016 712)
+)
+(connector
+	(pt 1016 96)
+	(pt 1016 712)
+)
+(connector
+	(pt 1016 712)
+	(pt 1016 832)
+)
+(connector
+	(pt 1296 696)
+	(pt 1008 696)
+)
+(connector
+	(pt 1008 96)
+	(pt 1008 696)
+)
+(connector
+	(pt 1008 696)
+	(pt 1008 824)
+)
+(connector
+	(pt 1488 568)
+	(pt 1528 568)
+)
+(connector
+	(pt 1528 472)
+	(pt 1528 568)
+)
+(connector
+	(pt 1528 472)
+	(pt 824 472)
+)
+(connector
+	(pt 528 528)
+	(pt 528 536)
+)
+(connector
+	(pt 528 536)
+	(pt 328 536)
+)
+(connector
+	(pt 368 744)
+	(pt 576 744)
+)
+(connector
+	(pt 576 744)
+	(pt 576 552)
+)
+(connector
+	(pt 824 512)
+	(pt 1080 512)
+)
+(connector
+	(pt 1080 512)
+	(pt 1080 96)
+)
+(connector
+	(pt 1416 256)
+	(pt 1464 256)
+)
+(connector
+	(pt 1416 272)
+	(pt 1464 272)
+)
+(connector
+	(pt 1416 288)
+	(pt 1464 288)
+)
+(connector
+	(pt 1416 304)
+	(pt 1464 304)
+)
+(connector
+	(pt 1416 320)
+	(pt 1464 320)
+)
+(connector
+	(pt 1416 336)
+	(pt 1464 336)
+)
+(connector
+	(pt 1416 352)
+	(pt 1464 352)
+)
+(connector
+	(pt 1416 368)
+	(pt 1464 368)
+)
+(connector
+	(pt 664 640)
+	(pt 664 552)
+)
+(connector
+	(pt 688 552)
+	(pt 688 640)
+)
+(connector
+	(pt 688 640)
+	(pt 696 640)
+)
+(connector
+	(pt 720 552)
+	(pt 720 640)
+)
+(connector
+	(pt 368 664)
+	(pt 616 664)
+)
+(connector
+	(pt 616 648)
+	(pt 368 648)
+)
+(connector
+	(pt 368 680)
+	(pt 616 680)
+)
+(connector
+	(pt 328 520)
+	(pt 528 520)
+)
+(connector
+	(pt 528 544)
+	(pt 328 544)
+)
+(connector
+	(pt 328 512)
+	(pt 528 512)
+)
+(junction (pt 1264 368))
+(junction (pt 960 248))
+(junction (pt 944 232))
+(junction (pt 928 216))
+(junction (pt 912 200))
+(junction (pt 896 184))
+(junction (pt 880 168))
+(junction (pt 1064 776))
+(junction (pt 1048 760))
+(junction (pt 1032 744))
+(junction (pt 1032 728))
+(junction (pt 1016 712))
+(junction (pt 1008 696))
+(text "Gerador de Numeros Aleatorios" (rect 120 152 300 166)(font "Arial" (font_size 8)))
+(text "Gerenciador de clocks" (rect 152 456 280 470)(font "Arial" (font_size 8)))
+(text "Gerenciador de tiros/Jogador" (rect 160 672 326 686)(font "Arial" (font_size 8)))
+(text "Controlador de entrada dos registradores" (rect 992 -48 1228 -34)(font "Arial" (font_size 8)))
+(text "estado do jogo" (rect 584 472 667 486)(font "Arial" (font_size 8)))
+(text "display (led)" (rect 1488 240 1557 254)(font "Arial" (font_size 8)))
+(text "display (lcd do quartus)" (rect 656 696 790 710)(font "Arial" (font_size 8)))
+(rectangle (rect 120 136 288 344))
+(rectangle (rect 128 400 328 616))
+(rectangle (rect 136 648 368 880))
+(rectangle (rect 992 -88 1200 96))
+(rectangle (rect 528 440 824 552))
+(rectangle (rect 1464 184 1608 376))
+(rectangle (rect 616 640 872 784))
