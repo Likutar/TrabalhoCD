@@ -872,6 +872,22 @@ applicable agreement for further details.
 	(pt 328 512)
 	(pt 528 512)
 )
+(connector
+	(pt 640 216)
+	(pt 640 232)
+)
+(connector
+	(pt 640 232)
+	(pt 640 440)
+)
+(connector
+	(pt 232 616)
+	(pt 232 648)
+)
+(connector
+	(pt 272 616)
+	(pt 272 648)
+)
 (junction (pt 1264 368))
 (junction (pt 960 248))
 (junction (pt 944 232))
@@ -885,6 +901,7 @@ applicable agreement for further details.
 (junction (pt 1032 728))
 (junction (pt 1016 712))
 (junction (pt 1008 696))
+(junction (pt 640 232))
 (text "Gerador de Numeros Aleatorios" (rect 120 152 300 166)(font "Arial" (font_size 8)))
 (text "Gerenciador de clocks" (rect 152 456 280 470)(font "Arial" (font_size 8)))
 (text "Gerenciador de tiros/Jogador" (rect 160 672 326 686)(font "Arial" (font_size 8)))

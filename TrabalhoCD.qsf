@@ -63,3 +63,5 @@ set_global_assignment -name BDF_FILE PosicaoVerticalAlien.bdf
 set_global_assignment -name BDF_FILE PosicaoHorizontalAlien.bdf
 set_global_assignment -name BDF_FILE JogoPerdido.bdf
 set_global_assignment -name BDF_FILE "Diagrama do que tem de ser feito.bdf"
+set_global_assignment -name BDF_FILE DivisorDeClock.bdf
+set_global_assignment -name BDF_FILE GeradorDeClocks.bdf
